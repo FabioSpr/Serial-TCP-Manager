@@ -61,7 +61,7 @@ Inside the download folder, with the environment activated, run the following co
 pyinstaller --onefile --icon=tcp-ip.png serial_server_win.py
 ```
 
-This will generate a new folder called `build` where you can find the .exe file
+This will generate a new folder called `dist` where you can find the .exe file
 
 
 ## Examples
@@ -76,3 +76,4 @@ You're welcome to contribute by:
 
 - 🐛 Filling [Issues](https://github.com/FabioSpr/Serial-TCP-Manager/issues) — report bugs
 - 💡 Filling [Issues](https://github.com/FabioSpr/Serial-TCP-Manager/issues) — propose new features
+
