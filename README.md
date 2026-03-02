@@ -12,9 +12,14 @@ At present, the executable is supported **exclusively on Windows Server**.
 
 **Prerequisites:** Python (>= 3.6) is installed
 
-Create a new Virtual Environment using the `requirements.txt` file provided in this repository:
+Before generating the executable, you must create a new Virtual Environment using the `requirements.txt` file provided in this repository:
 
-### Step 1: Create a virtual environment
+### Step 1: Download Repository
+
+Download the entire repository as zip.
+Open command prompt and move to the download folder
+
+### Step 2: Create a virtual environment
 
 Use the desired Python version to create a virtual environment:
 
@@ -24,7 +29,7 @@ python -m venv my_venv
 
 This creates a `my_venv` directory containing the virtual environment
 
-### Step 2: Activate the Virtual Environment
+### Step 3: Activate the Virtual Environment
 
 Activate the environment:
 
@@ -40,13 +45,23 @@ my_env\Scripts\activate.bat
 \my_env\Scripts\Activate.ps1
 ```
 
-### Step 3: Install Requirements
+### Step 4: Install Requirements
 Once the environment is activated, verify the Python version inside and install the package list:
 
 ```bash
 python --version
 pip install -r requirements.txt
 ```
+
+### Step 5: Create the Executable
+
+Inside the download folder, with the environment activated, run the following command inside the command prompt:
+
+```bash
+pyinstaller --onefile --icon=tcp-ip.png serial_server_win.py
+```
+
+This will generate a new folder called `build` where you can find the .exe file
 
 
 ## Examples
